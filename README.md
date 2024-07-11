@@ -61,7 +61,3 @@ Russian cyber espionage group<br>
    **Crowdstrike:** Fancy Bear.<br>
    **Mandiant:** APT28.<br>
    **Microsoft:** Forest Blizzard/ STRONTIUM.<br>
-         
-         
-
-
