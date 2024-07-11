@@ -55,4 +55,11 @@ Mandiant uses numerical designations preceded by "APT" (Advanced Persistent Thre
     **Tools:** Sofacy, X-Agent, CHOPSTICK, Zebrocy.
     **Operating Region:** Global, with a focus on Europe and the United States.
 
+Summary Example:
+--------------------
+Russian cyber espionage group
+         **Crowdstrike:** Fancy Bear
+         **Mandiant:** APT28
+         **Microsoft:** Forest Blizzard/ STRONTIUM
+
 
