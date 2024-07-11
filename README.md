@@ -57,10 +57,10 @@ Mandiant uses numerical designations preceded by "APT" (Advanced Persistent Thre
 
 Summary Example:
 --------------------
-Russian cyber espionage group
+Russian cyber espionage group<br>
    **Crowdstrike:** Fancy Bear.<br>
-   **Mandiant:** APT28.
-   **Microsoft:** Forest Blizzard/ STRONTIUM.
+   **Mandiant:** APT28.<br>
+   **Microsoft:** Forest Blizzard/ STRONTIUM.<br>
          
          
 
