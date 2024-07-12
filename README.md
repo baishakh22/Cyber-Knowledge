@@ -61,3 +61,15 @@ Russian cyber espionage group<br>
    **Crowdstrike:** Fancy Bear.<br>
    **Mandiant:** APT28.<br>
    **Microsoft:** Forest Blizzard/ STRONTIUM.<br>
+
+
+
+### 2. What is port?
+==> In the OSI model ports are above the network layer, located in trasport layer. A port is a virtual point where network connections start and end. 
+Managed by: OS
+LOcation: Transport Layer
+
+
+
+### 3. Difference between **Encryption** and **Hash**?
+==> 
