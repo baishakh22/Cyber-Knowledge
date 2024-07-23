@@ -1,4 +1,6 @@
 ## Top Web Vulnerabilities
+-------------------------------- Author: Hacking Heroes
+-------------------------------- Modified By: Muhfat Alam
 
 ### ⭐️ Injection Vulnerabilities
 1. SQL Injection (SQLi)
@@ -83,9 +85,54 @@
 53. Slowloris Attack  [^2]
 54. XML Denial of Service
 
-52. HTTP Parameter Pollution (HPP)
-53. Insecure Redirects and Forwards
-54. File Inclusion Vulnerability
+
+### ⭐️ Mobile Web Vulnerabilities:
+55. Insecure Data Storage on Mobile Devices
+56. Insecure Data Transmission on Mobile Devices
+57. Insecure Mobile API Endpoints
+58. Mobile App Reverse Engineering
+
+
+### ⭐️ IoT Web Vulnerabilities
+59. Insecure IoT Device Management
+60. Weak Authentication to Smart Homes
+61. IoT Data Privacy Issues
+
+
+### ⭐️ Web of Things (WoT) Vulnerabilities:
+62. Unauthorized Access to Smart Homes
+63. IoT Data Privacy Issues
+
+
+### ⭐️ Authentication Bypass
+64. Insecure "Remember Me" Functionality
+65. CAPTCHA Bypass
+
+
+### ⭐️ Server-Side Request Forgery (SSRF)
+66. Blind SSR
+67. Time-Based Blind SSRF
+
+
+### ⭐️ Content Spoofing
+68. MIME Sniffing
+69. X-Content-Type-Options Bypass
+70. Content Security Policy (CSP) Bypass
+
+
+### ⭐️ Business Logic Flaws:
+71. Inconsistent Validation
+72. Race Conditions
+73. Order Processing Vulnerabilities
+74. User-Based Flaws
+75. Account Enumeration
+
+
+### ⭐️ Zero-Day Vulnerabilities
+76. Unknown Vulnerabilities
+77. Unpatched Vulnerabilities
+78. Day-Zero Exploits
+
 
 
 
@@ -144,3 +191,4 @@ If catWrapper had been set to have a higher privilege level than the standard us
 
 [^2]: Slowloris is a denial-of-service attack program which allows an attacker to overwhelm a targeted server by opening and maintaining many simultaneous HTTP connections between the attacker and the target.
 
+![Screenshot 2024-07-23 at 4 33 48 PM](https://github.com/user-attachments/assets/19dfeba9-c9f3-4a6d-bef4-ed0395b06d45)
