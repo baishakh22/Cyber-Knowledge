@@ -1,5 +1,6 @@
 ## Top Web Vulnerabilities
 -------------------------------- Author: Hacking Heroes
+
 -------------------------------- Modified By: Muhfat Alam
 
 ### ⭐️ Injection Vulnerabilities
