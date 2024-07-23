@@ -191,4 +191,4 @@ Example: The following code is a wrapper around the UNIX command cat which print
 
 [^2]: Slowloris is a denial-of-service attack program which allows an attacker to overwhelm a targeted server by opening and maintaining many simultaneous HTTP connections between the attacker and the target.
 
-        ![Screenshot 2024-07-23 at 4 33 48 PM](https://github.com/user-attachments/assets/19dfeba9-c9f3-4a6d-bef4-ed0395b06d45)
+  ![Screenshot 2024-07-23 at 4 33 48 PM](https://github.com/user-attachments/assets/19dfeba9-c9f3-4a6d-bef4-ed0395b06d45)
