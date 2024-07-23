@@ -1,0 +1,146 @@
+## Top Web Vulnerabilities
+
+### ⭐️ Injection Vulnerabilities
+1. SQL Injection (SQLi)
+2. Cross-Site Scripting (XSS)
+3. Cross-Site Request Forgery (CSRF)
+4. Remote Code Injection (RCE)
+5. Command Injection [^1]
+6. XML Injection
+7. LDAP Injection
+8. XPath Injection
+9. HTML Injection
+10. Server-Side Includes (SSI) Injection
+11. OS Command Injection
+12. Blind SQL Injection
+13. Server-Side Template Injection (SSTI)
+
+
+### ⭐️ Broken Authentication and Session Management
+14. Session Fixation
+15. Brute-Force Attack
+16. Session Hijacking
+17. Password Cracking
+18. Weak Password Storage
+19. Insecure Authentication
+20. Cookie Theft
+21. Credential Reuse
+
+
+### ⭐️ Sensitive Data Exposure:
+22. Inadequate Encryption
+23. Insecure Direct Object References (IDOR)
+24. Data Leakage
+25. Unencrypted Data Storage
+26. Missing Security Header
+27. Insecure File Handling
+
+
+### ⭐️ Security Misconfiguration:
+28. Default Passwords
+29. Directory Listing
+30. Unprotected API Endpoints
+31. Open Ports
+32. Unpatched Software
+
+
+### ⭐️ Broken Access Control:
+33. Privilege Escalation
+34. Insecure Direct Object References
+35. Missing Function-Level Access Control
+
+
+### ⭐️ Insecure Deserialization
+36. Remote Code Execution via Deserialization
+37. Data Tampering
+38. Object Injection
+
+
+### ⭐️ API Security
+39. Insecure API Endpoints
+40. API key Exposure
+41. Lack of Rate Limiting
+42. Inadequate Input Validation
+
+
+### ⭐️ Insecure Communication
+43. Man-In-the-Middle (MITM) Attack
+44. Insufficient Transport Layer Security
+45. Insufficient SSL/TLS Configuration
+46. Insecure Communication Protocols
+
+
+### ⭐️ Client-Side Vulnerability
+47. DOM-Based XSS (DOM = Document Object Model)
+48. Insecure Cross-Origin Communication
+49. Browser Caches Poisoning
+50. Clickjacking
+
+
+### ⭐️ Denial of Service (DoS)
+51. Distributed Denial of Service (DDoS)
+52. Application Layer DoS
+53. Slowloris Attack  [^2]
+54. XML Denial of Service
+
+52. HTTP Parameter Pollution (HPP)
+53. Insecure Redirects and Forwards
+54. File Inclusion Vulnerability
+
+
+
+
+
+
+
+
+
+
+
+
+[^1]: Command Injection: Command injection is an attack in which the goal is execution of arbitrary commands on the host operating system via a vulnerable application.
+Example: The following code is a wrapper around the UNIX command cat which prints the contents of a file to standard output. It is also injectable:
+```
+#include <stdio.h>
+#include <unistd.h>
+
+int main(int argc, char **argv) {
+ char cat[] = "cat ";
+ char *command;
+ size_t commandLength;
+
+ commandLength = strlen(cat) + strlen(argv[1]) + 1;
+ command = (char *) malloc(commandLength);
+ strncpy(command, cat, commandLength);
+ strncat(command, argv[1], (commandLength - strlen(cat)) );
+
+ system(command);
+ return (0);
+}
+```
+
+Used normally, the output is simply the contents of the file requested:
+
+```
+$ ./catWrapper Story.txt
+When last we left our heroes...
+```
+
+However, if we add a semicolon and another command to the end of this line, the command is executed by catWrapper with no complaint:
+
+```
+$ ./catWrapper "Story.txt; ls"
+When last we left our heroes...
+Story.txt               doubFree.c              nullpointer.c
+unstosig.c              www*                    a.out*
+format.c                strlen.c                useFree*
+catWrapper*             misnull.c               strlength.c             useFree.c
+commandinjection.c      nodefault.c             trunc.c                 writeWhatWhere.c
+```
+
+If catWrapper had been set to have a higher privilege level than the standard user, arbitrary commands could be executed with that higher privilege.
+
+
+
+[^2]: Slowloris is a denial-of-service attack program which allows an attacker to overwhelm a targeted server by opening and maintaining many simultaneous HTTP connections between the attacker and the target.
+
