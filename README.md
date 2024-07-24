@@ -64,12 +64,15 @@ Russian cyber espionage group<br>
 
 
 
-### 2. What is port?
-==> In the OSI model ports are above the network layer, located in trasport layer. A port is a virtual point where network connections start and end. 
+### 2. What is a port?
+==> In the OSI model ports are above the network layer, located in the transport layer. A port is a virtual point where network connections start and end. 
 Managed by: OS
-LOcation: Transport Layer
+Location: Transport Layer
 
 
 
-### 3. Difference between **Encryption** and **Hash**?
-==> 
+### ⭐️ 3. What is the difference between **Encryption** and **Hash**?
+==> Encryption needs a key that can be used for deception. On the other hand, a hash is a one-way function that converts data into a fixed-length string of characters. 
+
+
+### ⭐️ 3.
